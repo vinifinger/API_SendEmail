@@ -15,7 +15,7 @@ Para clonar e rodar a aplicação, vai ser necessário [Git](https://git-scm.com
 
 Esse projetinho basicamente é para realizar envios de e-mail. 
 
-Para isso é necessário utilizar algum programa para realizar as requisições como: [Insomnia]() ou [Postman]().
+Para isso é necessário utilizar algum programa para realizar as requisições como: [Insomnia](insomnia.rest) ou [Postman](https://www.postman.com).
 
 A requisição é feita pela url: `localhost:3333/send`
 Possuindo as seguintes variáveis no corpo de requisição: 
