@@ -1,5 +1,5 @@
 import express from 'express';
-import SendEmailController from './controllers/SendEmailController';
+import SendEmailController from './controllers/SendEmailController/SendEmailController';
 import multer from 'multer';
 
 const upload = multer(); 

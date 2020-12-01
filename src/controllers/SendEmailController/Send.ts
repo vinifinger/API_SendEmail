@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import nodemailer from 'nodemailer';
 
-export default class SendEmailController {
+export default class Send {
 
-    async sendEmail ( req: Request, res: Response ) {
+    async send ( req: Request, res: Response ) {
 
         const params = {
             host: req.body.host,
