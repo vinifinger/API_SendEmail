@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import nodemailer from 'nodemailer';
 
-export default class SendEmail {
+export default class SendEmailController {
 
     async sendEmail ( req: Request, res: Response ) {
 
@@ -25,7 +25,7 @@ export default class SendEmail {
                 return
         }
 
-        if (req.file) 
+        if (req.file && req.file.mimetype.split('/')[1] === 'html') 
             html = req.file.buffer.toString();
 
         const transporter = nodemailer.createTransport({
